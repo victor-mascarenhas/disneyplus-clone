@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import "./App.css";
+import Detail from "./components/Detail";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Login />}></Route>
-          <Route exact path="/home" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/detail/:id" element={<Detail />}></Route>
         </Routes>
       </Router>
     </div>
